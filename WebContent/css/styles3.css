@@ -1,0 +1,70 @@
+
+#flash
+{
+width:300px;
+height:200px;
+position:relative;
+animation:myfirst 10s;
+animation-iteration-count:infinite ;
+-moz-animation:myfirst 10s; /* Firefox */
+-webkit-animation:myfirst 10s infinite linear; /* Safari and Chrome */
+-o-animation:myfirst 10s; /* Opera */
+}
+
+@keyframes myfirst
+{
+0%   {left:1000px; }
+10%  {left:900px;}
+20%  {left:800px;}
+30%  {left:700px;}
+40%  {left:600px;}
+50%  {left:500px;}
+60%  {left:400px;}
+70% {left:300px;}
+80% {left:200px;}
+90% {left:100px;}
+100%{left:0px;}
+}
+
+ @-moz-keyframes myfirst Firefox
+{
+0%   {left:1000px; }
+10%  {left:900px;}
+20%  {left:800px;}
+30%  {left:700px;}
+40%  {left:600px;}
+50%  {left:500px;}
+60%  {left:400px;}
+70% {left:300px;}
+80% {left:200px;}
+90% {left:100px;}
+100%{left:0px;}
+}
+
+@-webkit-keyframes myfirst Safari and Chrome
+0%   {left:1000px; }
+10%  {left:900px;}
+20%  {left:800px;}
+30%  {left:700px;}
+40%  {left:600px;}
+50%  {left:500px;}
+60%  {left:400px;}
+70% {left:300px;}
+80% {left:200px;}
+90% {left:100px;}
+100%{left:0px;}
+}
+
+@-o-keyframes myfirst Opera
+0%   {left:1000px; }
+10%  {left:900px;}
+20%  {left:800px;}
+30%  {left:700px;}
+40%  {left:600px;}
+50%  {left:500px;}
+60%  {left:400px;}
+70% {left:300px;}
+80% {left:200px;}
+90% {left:100px;}
+100%{left:0px;}
+} 

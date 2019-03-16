@@ -1,0 +1,116 @@
+var script=document.createElement("script");
+script.type="text/javascript";
+script.src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+setTimeout(function (){
+	$(document).ready(function(){
+		 $("#myselect").change(function(){
+			 var opt=$("#myselect").val();
+			 var pt=$("#select").val();
+			    if(pt=="0"&&opt=="0"){
+			 	    $("#a").css('display','block');
+					$("#d").css('display','none');
+					$("#c").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+					
+			 }
+			 if(pt=="0"&&opt=="1"){
+			 	$("#b").css('display','block');
+					$("#a").css('display','none');
+					$("#c").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+			 }
+			 if(pt=="0"&&opt=="2"){
+			 	 $("#c").css('display','block');
+					$("#b").css('display','none');
+					$("#a").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+			 }
+			 if(pt=="1"&&opt=="0"){
+			 	$("#d").css('display','block');
+					$("#c").css('display','none');
+					$("#a").css('display','none');
+					$("#b").css('display','none');
+					$("#f").css('display','none');
+					$("#e").css('display','none');
+			 }
+			 if(pt=="1"&&opt=="1"){
+				 	$("#e").css('display','block');
+						$("#c").css('display','none');
+						$("#a").css('display','none');
+						$("#f").css('display','none');
+						$("#b").css('display','none');
+						$("#d").css('display','none');
+				 }
+			 if(pt=="1"&&opt=="2"){
+				 	$("#f").css('display','block');
+						$("#c").css('display','none');
+						$("#a").css('display','none');
+						$("#e").css('display','none');
+						$("#d").css('display','none');
+						$("#b").css('display','none');
+				 }
+			    
+			}); 
+		 $("#select").change(function(){
+			 var pt=$("#select").val();
+			 var opt=$("#myselect").val();
+			 if(pt=="0"&&opt=="0"){
+			 	    $("#a").css('display','block');
+					$("#d").css('display','none');
+					$("#c").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+					
+			 }
+			 if(pt=="0"&&opt=="1"){
+			 	$("#b").css('display','block');
+					$("#a").css('display','none');
+					$("#c").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+			 }
+			 if(pt=="0"&&opt=="2"){
+				  $("#c").css('display','block');
+					$("#b").css('display','none');
+					$("#a").css('display','none');
+					$("#e").css('display','none');
+					$("#f").css('display','none');
+					$("#d").css('display','none');
+			 }
+			 if(pt=="1"&&opt=="0"){
+			 	$("#d").css('display','block');
+					$("#c").css('display','none');
+					$("#a").css('display','none');
+					$("#b").css('display','none');
+					$("#f").css('display','none');
+					$("#e").css('display','none');
+			 }
+			 if(pt=="1"&&opt=="1"){
+				 	$("#e").css('display','block');
+						$("#c").css('display','none');
+						$("#a").css('display','none');
+						$("#f").css('display','none');
+						$("#b").css('display','none');
+						$("#d").css('display','none');
+				 }
+			 if(pt=="1"&&opt=="2"){
+				 	   $("#f").css('display','block');
+						$("#c").css('display','none');
+						$("#a").css('display','none');
+						$("#e").css('display','none');
+						$("#d").css('display','none');
+						$("#b").css('display','none');
+				 }
+			});
+		 
+		 })
+},100);
